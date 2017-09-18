@@ -1,10 +1,16 @@
+{% load staticfiles %}
+
 <html>
     <head>
-        <title>Casamento Adri Ary</title>
+        <title>Casamento Adri & Ary</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
-        <div>
-            <h1><a href="">Casamento Adri Ary</a></h1>
+        <div class="page-header">
+        <h1><a href="/">Casamento Adri & Ary</a></h1>
         </div>
         <div>
             <p>Data estimada: 18/03/2019</p>
@@ -12,14 +18,20 @@
             <p>Todos que trouxerem presentes bons serão muito bem-vindos!</p>
             <p>É nóis!</p>
         </div>
-        <div>
-       {% for post in posts %}
-    <div>
-        <p>published: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
-        <p>{{ post.text|linebreaksbr }}</p>
-    </div>
-{% endfor %}
+        <div class="content container">
+    <div class="row">
+        <div class="col-md-8">
+            {% for post in posts %}
+                <div class="post">
+                    <div class="date">
+                        <p>published: {{ post.published_date }}</p>
+                    </div>
+                    <h1><a href="">{{ post.title }}</a></h1>
+                    <p>{{ post.text|linebreaksbr }}</p>
+                </div>
+            {% endfor %}
         </div>
+    </div>
+</div>
     </body>
 </html>
