@@ -12,7 +12,14 @@
             <p>Todos que trouxerem presentes bons serão muito bem-vindos!</p>
             <p>É nóis!</p>
         </div>
-        <ul><li>primeiro item</li><li>segundo item</li></ul>
+        <div>
+       {% for post in posts %}
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endfor %}
         </div>
     </body>
 </html>
