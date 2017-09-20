@@ -9,33 +9,6 @@
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
-        <div class="page-header">
-          {% if user.is_authenticated %}
-        <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-        <a href="{% url 'post_draft_list' %}" class="top-menu"><span class="glyphicon glyphicon-edit"></span></a>
-        <p class="top-menu">Hello {{ user.username }} <small>(<a href="{% url 'logout' %}">Log out</a>)</small></p>
-          {% else %}
-        <a href="{% url 'login' %}" class="top-menu"><span class="glyphicon glyphicon-lock"></span></a>
-          {% endif %}
-          <h1><a href="/">Casamento Adri & Ary</a></h1>
-          <br/><br/>
-              <style>
-              section{
-              margin-left: 170px;
-              border-left: 1px solid gray;
-              padding: 1em;
-              overflow: hidden;
-              }
-              </style>
-              <section><img src="https://i.imgur.com/bN87jWT.jpg"alt="Foto Casal" style="width:600px;height:500px;"/></section>
-        </div>
-    <div class="content container">
-        <div class="row">
-            <div class="col-md-8">
-            {% block content %}
-            {% endblock %}
-            </div>
-        </div>
-    </div>
+    <a href="{% url 'contato' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
     </body>
 </html>
