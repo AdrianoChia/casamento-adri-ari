@@ -12,12 +12,16 @@
   
   <style>
         /* Remove the navbar's default margin-bottom and rounded borders */ 
-    nav {
-      background-color: #555;
+    .navbar {
+      background: black;
       margin-bottom: 0;
       border-radius: 0;
     }
-    header {margin-bottom: 0;
+    .jumbotron {
+      background-color: white;
+      margin-bottom: 0;}
+    header {
+      margin-bottom: 0;
       border-radius: 0;
       background-color: #555}
     
@@ -35,19 +39,31 @@
   <header>
       <div class="jumbotron text-center">
         <h1>Casamento Adriano & Ariany</h1>
+        <a href="/home/"><img src="https://i.imgur.com/dsGPkMY.jpg" alt="Brasão"></a>
       </div>
   </header>  
-    <nav class="navbar navbar-default">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="/home/" >Home</a>
-      </div>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li><a href="/galeria/">Galeria</a></li>
-          <li><a href="/rsvp/">RSVP</a></li>
-          <li><a href="/evento/">Evento</a></li>
-          <li><a href="/lista_presentes/">Lista Presentes</a></li>
-          <li><a href="/contato/">Contato</a></li></ul>
-        </ul>
+            <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="/home/">Casamento Adriano & Ariany<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/galeria/">Galeria</a></li>
+              <li><a href="/rsvp/">RSVP</a></li>
+              <li><a href="/evento/">Evento</a></li>
+              <li><a href="/lista_presentes/">Lista Presentes</a></li>
+              <li><a href="/contato/">Contato</a></li>
+            </li>
+            </ul>
+        </div>
+      </div>
+
     </nav>
     <div class="container">
       <img class="img-responsive" src="https://i.imgur.com/v35d2BS.jpg"  alt="Convite" >
