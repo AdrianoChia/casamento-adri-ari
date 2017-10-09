@@ -1,88 +1,74 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
+<title>Casamento Adriano & Ariany</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2{font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+p {line-height: 2}
+.bgimg {
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.bgimg {background-image: url("https://i.imgur.com/v35d2BS.jpg")}
+</style>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!--Loading Bootstrap-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <!--Loading Bootstrap-->
-  <style>
-        /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-    }
-    
-    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 450px}
-    
-    /* Set gray background color and 100% height */
-    .sidenav {
-      padding-top: 20px;
-      background-color: #f1f1f1;
-      height: 100%;
-    }
-    
-    /* Set black background color, white text and some padding */
-    footer {
-      background-color: #555;
-      color: white;
-      padding: 15px;
-    }
-    
-    /* On small screens, set height to 'auto' for sidenav and grid */
-    @media screen and (max-width: 767px) {
-      .sidenav {
-        height: auto;
-        padding: 15px;
-      }
-      .row.content {height:auto;} 
-    }
-  </style>
-  <title>Casamento Adriano & Ariany</title>
-</head>
 <body>
-      <nav class="navbar navbar-inverse navbar-fixed-top">
-        
-          <div class="navbar-header">
-            <a class="navbar-brand" href="/home/">Casamento Adriano & Ariany</a>
-          </div>
-          <ul class="nav navbar-nav">
-            <li><a href="/galeria/">Galeria</a></li>
-            <li><a href="/rsvp/">RSVP</a></li>
-            <li><a href="/evento/">Evento</a></li>
-            <li><a href="/lista_presentes/">Lista Presentes</a></li>
-            <li><a href="/contato/">Contato</a></li></ul>
-          </ul>
-        
-      </nav>
-    </br></br></br></br>
-<div class="input-group">
-  <span class="input-group-addon" id="basic-addon1">Nome</span>
-  <input type="text" class="form-control" aria-describedby="basic-addon1">
-</div>
-<div class="input-group">
-  <span class="input-group-addon" id="basic-addon1">Nome</span>
-  <input type="text" class="form-control" aria-describedby="basic-addon1">
-</div>
-<div class="input-group">
-  <span class="input-group-addon" id="basic-addon1">Nome</span>
-  <input type="text" class="form-control" aria-describedby="basic-addon1">
+<!-- Navbar (sticky top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
+    <a href="/home/" style="width:20%" class="w3-bar-item w3-button">Home</a>
+    <a href="/galeria/" style="width:20%" class="w3-bar-item w3-button">Galeria</a>
+    <a href="/evento/" style="width:20%" class="w3-bar-item w3-button">Evento</a>
+    <a href="/lista_presentes/" style="width:20%" class="w3-bar-item w3-button">Lista Presentes</a>
+    <a href="/rsvp/" style="width:20%" class="w3-bar-item w3-button w3-hover-black">RSVP</a>
+  </div>
 </div>
 
-<div class="input-group">
-  <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
-  <span class="input-group-addon" id="basic-addon2">@example.com</span>
+    
+<!-- RSVP section -->
+<div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min w3-center" id="wedding">
+  <h1>HOPE YOU CAN MAKE IT!</h1>
+  <p class="w3-large">Favor responder até Outubro/2018</p>
+  <p class="w3-xlarge">
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" style="padding:8px 60px">RSVP</button>
+  </p>
 </div>
-     
+
+
+<!-- RSVP modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
+    <div class="w3-container w3-white w3-center">
+      <h1 class="w3-wide">Irá comparecer ao evento?</h1>
+      <p>Contamos com a sua presença!</p>
+      <form>
+        <input class="w3-input w3-border" type="text" placeholder="Nome(s)" name="nome">
+      </form>
+      <p><i>Adriano & Ariany</i></p>
+      <div class="w3-row">
+        <div class="w3-half">
+          <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-green">#Partiu!</button>
+        </div>
+        <div class="w3-half">
+          <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-red">Não irei comparecer</button>
+        </div>
+      </div>
+    </div>
   </div>
-  </br></br></br></br>
-  <footer class="container-fluid text-center">
-    <p>Powered by: Adriano</p>
-  </footer>
+</div>     
+  </div>
+  </br></br></br>
+  
+  <!-- Footer -->
+<footer class="w3-center w3-grey w3-padding-16">
+  <p>Powered by <a href="/home/" title="Adriano Corporation" target="_blank" class="w3-hover-text-green">Adriano Corporation</a></p>
+</footer>
+<div class="w3-hide-small" style="margin-bottom:32px"> </div>
 </body>
 </html>
 

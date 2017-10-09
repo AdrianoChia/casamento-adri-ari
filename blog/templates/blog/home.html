@@ -1,75 +1,51 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!--Loading Bootstrap-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <!--Loading Bootstrap-->
-  
-  <style>
-        /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .navbar {
-      background: black;
-      margin-bottom: 0;
-      border-radius: 0;
-    }
-    .jumbotron {
-      background-color: white;
-      margin-bottom: 0;}
-    header {
-      margin-bottom: 0;
-      border-radius: 0;
-      background-color: #555}
-    
-        /* Set black background color, white text and some padding */
-    footer {
-      background-color: #555;
-      color: white;
-      padding: 15px;
-    }
-  </style>
-    <head>
-  <title>Casamento Adriano & Ariany</title>
-    </head>
+<html>
+<title>Casamento Adriano & Ariany</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2{font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+p {line-height: 2}
+.bgimg {
+    width: 100%;
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.bgimg {background-image: url("https://i.imgur.com/v35d2BS.jpg")}
+</style>
 <body>
-  <header>
-      <div class="jumbotron text-center">
-        <h1>Casamento Adriano & Ariany</h1>
-        <a href="/home/"><img src="https://i.imgur.com/dsGPkMY.jpg" alt="Brasão"></a>
-      </div>
-  </header>  
-    <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-            <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="/home/">Casamento Adriano & Ariany<span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="/galeria/">Galeria</a></li>
-              <li><a href="/rsvp/">RSVP</a></li>
-              <li><a href="/evento/">Evento</a></li>
-              <li><a href="/lista_presentes/">Lista Presentes</a></li>
-              <li><a href="/contato/">Contato</a></li>
-            </li>
-            </ul>
-        </div>
-      </div>
 
-    </nav>
-    <div class="container">
-      <img class="img-responsive" src="https://i.imgur.com/v35d2BS.jpg"  alt="Convite" >
-    </div>      
-  <footer class="container-fluid text-center">
-    <p>Powered by: Adriano Corporation</p>
-  </footer>
+<!-- Header / Home-->
+<header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-text-white w3-center">
+    <h1 class="w3-jumbo">Adriano & Ariany</h1>
+    <h2>Are getting married</h2>
+    <h2><b>13.03.2019</b></h2>
+  </div>
+
+</header>
+
+<!-- Navbar (sticky top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
+    <a href="/home/" style="width:20%" class="w3-bar-item w3-button">Home</a>
+    <a href="/galeria/" style="width:20%" class="w3-bar-item w3-button">Galeria</a>
+    <a href="/evento/" style="width:20%" class="w3-bar-item w3-button">Evento</a>
+    <a href="/lista_presentes/" style="width:20%" class="w3-bar-item w3-button">Lista Presentes</a>
+    <a href="/rsvp/" style="width:20%" class="w3-bar-item w3-button w3-hover-black">RSVP</a>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-grey w3-padding-16">
+  <p>Powered by <a href="/home/" title="Adriano Corporation" target="_blank" class="w3-hover-text-green">Adriano Corporation</a></p>
+</footer>
+<div class="w3-hide-small" style="margin-bottom:32px"> </div>
+
 </body>
 </html>
