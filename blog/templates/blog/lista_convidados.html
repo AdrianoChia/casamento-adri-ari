@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<title>Casamento Adriano & Ariany</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+  body,h1,h2{font-family: "Raleway", sans-serif}
+  body, html {height: 100%}
+  p {line-height: 2}
+  .bgimg {
+min-height: 100%;
+
+    background-image: url("https://i.imgur.com/v35d2BS.jpg");
+}
+</style>
+<body>
+	<div>
+{% for lista in lista %}
+{{ lista }}
+{% endfor %}
+</div>
+<!-- Footer -->
+<footer class="w3-center w3-grey w3-padding-16">
+  <p>Powered by <a href="/home/" title="Adriano Corporation" target="_blank" class="w3-hover-text-green">Adriano Corporation</a></p>
+</footer>
+<div class="w3-hide-small" style="margin-bottom:32px"> </div>
+
+</body>
+</html>

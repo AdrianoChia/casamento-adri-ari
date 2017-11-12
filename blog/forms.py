@@ -1,9 +1,9 @@
 from django import forms
 
-from .models import Post
+from .models import RSVP
 
-class PostForm(forms.ModelForm):
+class RSVPForm(forms.ModelForm):
 
     class Meta:
-        model = Post
-        fields = ('title', 'text')
+        model = RSVP
+        fields = ('convidado', 'acompanhante', 'comentario')

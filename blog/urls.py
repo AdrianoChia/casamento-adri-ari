@@ -11,4 +11,5 @@ urlpatterns = [
     url(r'^galeria/', views.galeria, name='galeria'),
     url(r'^lista_presentes/', views.lista_presentes, name='lista_presentes'),
     url(r'^rsvp/', views.rsvp, name='rsvp'),
+    url(r'^lista_convidados/', views.lista_convidados, name='lista_convidados'),
 ]
