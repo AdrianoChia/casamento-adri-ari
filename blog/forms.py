@@ -1,6 +1,6 @@
 from django import forms
 
-from .models import RSVP#, oauth
+from .models import RSVP, oauth
 
 class RSVPForm(forms.ModelForm):
 
@@ -8,8 +8,8 @@ class RSVPForm(forms.ModelForm):
         model = RSVP
         fields = ('convidado', 'acompanhante', 'comentario')
 
-#class oauthForm(forms.ModelForm):
-#
-#    class Meta:
-#        model = oauth
-#        fields = ('user_ID', 'client_secret', 'code')
+class oauthForm(forms.ModelForm):
+
+    class Meta:
+        model = oauth
+        fields = ('user_ID', 'client_secret', 'grant_type', 'redirect_uri', 'code')

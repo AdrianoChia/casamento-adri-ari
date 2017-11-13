@@ -15,9 +15,10 @@ class RSVP(models.Model):
 
     def __str__(self):
         return (self.convidado)
-#class oauth(models.Mode):
-#    user_ID = models.CharField(max_length=200)
-#    client_secret = models.CharField(max_length=200)
-#    grant_type = models.CharField(default='authorization_code')
-#    redirect_uri = models.CharField(default='adrianochia.pythonanywhere.com/tag')
-#    code = models.CharField(max_length=200)
+
+class oauth(models.Model):
+    user_ID = models.TextField(default='c966c6fc09974becaa208180e8f5aa44')
+    client_secret = models.TextField(default='93375efa5f3f4055a9740bfc6367121d')
+    grant_type = models.TextField(default='authorization_code')
+    redirect_uri = models.TextField(default='adrianochia.pythonanywhere.com/tag')
+    code = models.TextField(default='14421ece8c3642aca864a3a01f37980f')

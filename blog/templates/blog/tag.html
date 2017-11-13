@@ -33,6 +33,11 @@ p {line-height: 2}
 </div>
 
 <h1>Teste</h1>
+<form method="POST" class="post-form" href="https://api.instagram.com/oauth/access_token">{% csrf_token %}
+        {{ form.as_p }}
+      <button type="submit" class="save btn btn-default">Enviar Oauth</button>
+</form>
+
 
   
 <!-- Footer -->

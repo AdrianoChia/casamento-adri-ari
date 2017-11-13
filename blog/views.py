@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.utils import timezone
-from .models import RSVP #oauth
-from .forms import RSVPForm #oauthForm
+from .models import RSVP, oauth
+from .forms import RSVPForm, oauthForm
 from django.contrib.auth.decorators import login_required
 
 def contato(request):
@@ -19,7 +19,7 @@ def rsvp(request):
 		post = form.save(commit = 'false')
 		post.created_date = timezone.now()
 		post.save()
-		return redirect('blog.rsvp.html')
+		return redirect('blog/rsvp.html')
 	else:
 		form = RSVPForm()
 	return render(request, 'blog/rsvp.html', {'form': form})
@@ -35,7 +35,14 @@ def lista_convidados(request):
 	return render(request, 'blog/lista_convidados.html', {'lista': lista})
 
 def tag(request):
-	return render(request, 'blog/tag.html')
+	if request.method == "POST":
+			form = oauthForm(request.POST)
+			post = form.save(commit = 'false')
+			post.save()
+			return redirect('blog/tag.html')
+	else:
+		form = oauthForm()
+	return render(request, 'blog/rsvp.html', {'form': form})
 
 
 
