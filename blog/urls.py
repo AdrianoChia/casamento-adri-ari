@@ -12,5 +12,5 @@ urlpatterns = [
     url(r'^lista_presentes/', views.lista_presentes, name='lista_presentes'),
     url(r'^rsvp/', views.rsvp, name='rsvp'),
     url(r'^lista_convidados/', views.lista_convidados, name='lista_convidados'),
-    url(r'^tag?code=(\d+)$', views.tag, name='tag'),
+    url(r'^tag?code=14421ece8c3642aca864a3a01f37980f$', views.tag, name='tag'),
 ]
