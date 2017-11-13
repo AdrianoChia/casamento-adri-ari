@@ -22,7 +22,7 @@ def rsvp(request):
 		return redirect('blog.rsvp.html')
 	else:
 		form = RSVPForm()
-	return render(request, 'blog/RSVP.html', {'form': form})
+	return render(request, 'blog/rsvp.html', {'form': form})
 
 def evento(request):
     return render(request, 'blog/evento.html')
