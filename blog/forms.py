@@ -1,6 +1,6 @@
 from django import forms
 
-from .models import RSVP, #oauth
+from .models import RSVP#, oauth
 
 class RSVPForm(forms.ModelForm):
 
