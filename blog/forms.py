@@ -7,3 +7,9 @@ class RSVPForm(forms.ModelForm):
     class Meta:
         model = RSVP
         fields = ('convidado', 'acompanhante', 'comentario')
+
+'''class tagForm(forms.ModelForm):
+
+    class Meta:
+        model = tag
+        fields = ('tag',)'''

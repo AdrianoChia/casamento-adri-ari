@@ -16,5 +16,10 @@ class RSVP(models.Model):
     def __str__(self):
         return (self.convidado)
 
-class foto(models.Model):
-    foto = models.TextField()
+class grupo_foto(models.Model):
+    grupo_foto = models.TextField()
+'''
+class tag(models.Model):
+    tag = models.CharField(max_length=20)
+    def __str__(self):
+        return (self.tag)'''
